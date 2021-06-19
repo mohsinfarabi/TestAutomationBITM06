@@ -4,21 +4,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class BrowserLaunch {
-
-    public static WebDriver driver; //WebDriver = Interface, driver = reference variable
-
-    public static void main(String[] args) {
-
-
-        firefoxLaunch();
-        chromeLaunch();
-
-
-
-    }
-
-
+public class TestBase {
+    public static WebDriver driver;
 
     public static void  firefoxLaunch(){
         // set driver path: static
@@ -30,11 +17,6 @@ public class BrowserLaunch {
 
         //Maximize Browser Size
         driver.manage().window().maximize();
-
-        //open URL
-        //driver.get("https://google.com"); // get String URL
-        openURL("https://google.com"); //method overload | Encapsulation
-        closeBrowser(); // Close firefox after loading the site
     }
 
     public static void chromeLaunch(){
@@ -48,11 +30,6 @@ public class BrowserLaunch {
 
         // Maximize Browser Size
         driver.manage().window().maximize();
-
-        //open URL
-        //driver.get("https://apple.com");
-        openURL("https://apple.com");
-        closeBrowser(); // Close chrome after loading the site
     }
 
     public static void  openURL(String url){
