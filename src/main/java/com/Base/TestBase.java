@@ -1,5 +1,6 @@
 package com.Base;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -38,5 +39,15 @@ public class TestBase {
 
     public static void closeBrowser(){
         driver.close();
+    }
+
+    // Type Action
+    public static void  type(String elementXpath, String value){
+        driver.findElement(By.xpath(elementXpath)).sendKeys(value);
+    }
+
+    //Click Action
+    public static void  click(String elementXpath){
+        driver.findElement(By.xpath(elementXpath)).click();
     }
 }
