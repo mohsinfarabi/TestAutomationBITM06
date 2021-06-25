@@ -11,6 +11,8 @@ public class RegistrationTest extends TestBase {
         firefoxLaunch();
         openURL("https://demo.opencart.com/index.php?route=account/register");
 
+
+
         TC_Registration_Valid001();
 
         closeBrowser();

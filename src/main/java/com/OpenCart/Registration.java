@@ -12,6 +12,10 @@ public class Registration extends TestBase {
 
         firefoxLaunch();
         openURL("https://demo.opencart.com/index.php?route=account/register");
+        invalidRegistration();
+
+        driver.navigate().refresh();
+
         validRegistration();
         closeBrowser();
     }
@@ -34,7 +38,30 @@ public class Registration extends TestBase {
 
     }
 
+    public static void invalidRegistration(){
+
+        WebElement firstName = driver.findElement(By.xpath("//input[@id='input-firstname']"));
+        WebElement lastName = driver.findElement(By.xpath("//input[@id='input-lastname']"));
+        WebElement email = driver.findElement(By.xpath("//input[@id='input-email']"));
+        WebElement telephone = driver.findElement(By.xpath("//input[@id='input-telephone']"));
+        WebElement password = driver.findElement(By.xpath("//input[@id='input-password']"));
+        WebElement confirmPassword = driver.findElement(By.xpath("//input[@id='input-confirm']"));
+        WebElement privacyCheckbox = driver.findElement(By.cssSelector("#content > form > div > div > input[type=checkbox]:nth-child(2)"));
+        WebElement continueButton = driver.findElement(By.cssSelector("#content > form > div > div > input.btn.btn-primary"));
+
+        firstName.sendKeys("");
+        lastName.sendKeys("Farabi");
+        email.sendKeys(name()+"@gmail.com");
+        telephone.sendKeys("12323");
+        password.sendKeys("123456");
+        confirmPassword.sendKeys("123456");
+        privacyCheckbox.click();
+        continueButton.click();
+
+    }
     public static void validRegistration(){
+
+
 
         WebElement firstName = driver.findElement(By.xpath("//input[@id='input-firstname']"));
         WebElement lastName = driver.findElement(By.xpath("//input[@id='input-lastname']"));
