@@ -8,7 +8,7 @@ import java.util.Random;
 
 public class UserNavigation extends TestBase {
 
-    public static String emailInfo =  name()+"@gmail.com"; // setting the randomly generated email id to a variable;
+    public static String emailInfo =  name()+"@gmail.com"; // setting the randomly generated email id to an object;
 
     public static void main(String[] args) {
 
