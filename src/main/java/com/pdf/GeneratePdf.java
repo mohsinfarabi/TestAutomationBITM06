@@ -11,9 +11,6 @@ import ru.yandex.qatools.ashot.shooting.ShootingStrategies;
 import ru.yandex.qatools.ashot.util.ImageTool;
 
 
-import javax.imageio.ImageIO;
-import java.awt.image.BufferedImage;
-import java.io.ByteArrayOutputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
@@ -21,7 +18,7 @@ public class GeneratePdf extends TestBase {
     public static void main(String[] args) throws DocumentException, IOException {
         firefoxLaunch();
         openURL("https://demo.opencart.com/");
-        //createPDF();
+        createPDF();
         createPDFFullImage();
         closeBrowser();
     }
@@ -79,7 +76,7 @@ public class GeneratePdf extends TestBase {
 
         Image img= Image.getInstance(input);
 
-        img.scaleToFit(PageSize.A4.getWidth(),PageSize.A4.getHeight());
+        img.scaleToFit(PageSize.A4.getWidth()/2,PageSize.A4.getHeight()/2);
 
         doc.add(img);
 
