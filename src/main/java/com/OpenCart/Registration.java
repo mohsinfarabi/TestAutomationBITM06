@@ -81,5 +81,6 @@ public class Registration extends TestBase {
         privacyCheckbox.click();
         continueButton.click();
 
+
     }
 }
