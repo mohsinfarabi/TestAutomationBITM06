@@ -25,55 +25,52 @@ td,th {border:1px solid #009;padding:.25em .5em}
 <body>
 <table cellspacing="0" cellpadding="0" class="testOverview">
 <tr><th>Test</th><th>Methods<br/>Passed</th><th>Scenarios<br/>Passed</th><th># skipped</th><th># failed</th><th>Total<br/>Time</th><th>Included<br/>Groups</th><th>Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em"><a href="#t1">OpenCart Automation Test</a></td><td class="numi">6</td><td class="numi">6</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">23.5 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em"><a href="#t1">Simple Test</a></td><td class="numi">5</td><td class="numi">5</td><td class="numi">0</td><td class="numi">0</td><td class="numi">43.7 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="methodOverview" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
-<tr id="t1"><th colspan="5">OpenCart Automation Test &#8212; failed</th></tr>
-<tr class="failedodd"><td>com.OpenCartTestNG.TestNG_ProductOrder</td><td><a href="#m1"><b>orderProduct</b>  </a></td><td class="numi">1</td><td>1625832105898</td><td class="numi">25</td></tr>
-<tr><th colspan="5">OpenCart Automation Test &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="3">com.OpenCartTestNG.TestNG_Login</td><td><a href="#m2"><b>TC_Login_Invalid_004</b>  ("Login with blank email and password")</a></td><td class="numi">1</td><td>1625832100744</td><td class="numi">1446</td></tr><tr class="passedodd"><td><a href="#m3"><b>TC_Login_Valid_002</b>  ("Login with valid data")</a></td><td class="numi">1</td><td>1625832102190</td><td class="numi">2420</td></tr><tr class="passedodd"><td><a href="#m4"><b>TC_Login_Invalid_003</b>  ("Login with blank email")</a></td><td class="numi">1</td><td>1625832099248</td><td class="numi">1495</td></tr>
-<tr class="passedeven"><td rowspan="2">com.OpenCartTestNG.TestNG_Registration</td><td><a href="#m5"><b>InvalidRegistration</b>  ("Invalid Registration")</a></td><td class="numi">1</td><td>1625832084222</td><td class="numi">3200</td></tr><tr class="passedeven"><td><a href="#m6"><b>validRegistration</b>  ("Valid Registration")</a></td><td class="numi">1</td><td>1625832088674</td><td class="numi">7802</td></tr>
-<tr class="passedodd"><td>com.OpenCartTestNG.TestNG_Login</td><td><a href="#m7"><b>TC_Login_Invalid_001</b>  ("Login with Invalid Email")</a></td><td class="numi">1</td><td>1625832097787</td><td class="numi">1461</td></tr>
+<tr id="t1"><th colspan="5">Simple Test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="5">com.DataProvider.DP_Registration</td><td><a href="#m1"><b>validRegistrationTest</b>  </a></td><td class="numi">1</td><td>1625914919416</td><td class="numi">5365</td></tr><tr class="passedodd"><td><a href="#m2"><b>invalidRegistrationTest</b>  </a></td><td class="numi">4</td><td>1625914885720</td><td class="numi">29927</td></tr><tr class="passedodd"><td><a href="#m3"><b>invalidRegistrationTest</b>  </a></td><td class="numi">4</td><td>1625914885720</td><td class="numi">29927</td></tr><tr class="passedodd"><td><a href="#m4"><b>invalidRegistrationTest</b>  </a></td><td class="numi">4</td><td>1625914885720</td><td class="numi">29927</td></tr><tr class="passedodd"><td><a href="#m5"><b>invalidRegistrationTest</b>  </a></td><td class="numi">4</td><td>1625914885720</td><td class="numi">29927</td></tr>
 </table>
-<h1>OpenCart Automation Test</h1>
-<h2 id="m1">com.OpenCartTestNG.TestNG_ProductOrder:orderProduct</h2>
-<div>
-<div class="stacktrace">org.openqa.selenium.NoSuchElementException: Unable to locate element: #content &gt; div:nth-child(3) &gt; div &gt; div &gt; div:nth-child(2) &gt; div.button-group &gt; button:nth-child(1)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-PK5Q720&apos;, ip: &apos;192.168.31.173&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_291&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 89.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210622155641, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 7240, moz:profile: C:\Users\Farabi\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: c6786cae-903f-433c-8790-36ef490c8f10
-*** Element info: {Using=css selector, value=#content &gt; div:nth-child(3) &gt; div &gt; div &gt; div:nth-child(2) &gt; div.button-group &gt; button:nth-child(1)}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at com.OpenCartTestNG.TestNG_ProductOrder.orderProduct(TestNG_ProductOrder.java:18)
-	at java.util.ArrayList.forEach(ArrayList.java:1259)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-... Removed 28 stack frames</div>
-</div>
+<h1>Simple Test</h1>
+<h2 id="m1">com.DataProvider.DP_Registration:invalidRegistrationTest</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>mail@mail.com</td>
+<td>Testing</td>
+</tr>
+</table>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m2">com.OpenCartTestNG.TestNG_Login:TC_Login_Invalid_004</h2>
+<h2 id="m2">com.DataProvider.DP_Registration:validRegistrationTest</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>DbdHj1FHCf@gmail.com</td>
+<td>TestE</td>
+</tr>
+</table>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m3">com.OpenCartTestNG.TestNG_Login:TC_Login_Valid_002</h2>
+<h2 id="m3">com.DataProvider.DP_Registration:invalidRegistrationTest</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>mai2@mail.com</td>
+<td></td>
+</tr>
+</table>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m4">com.OpenCartTestNG.TestNG_Login:TC_Login_Invalid_003</h2>
+<h2 id="m4">com.DataProvider.DP_Registration:invalidRegistrationTest</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td></td>
+<td>Test0</td>
+</tr>
+</table>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m5">com.OpenCartTestNG.TestNG_Registration:InvalidRegistration</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m6">com.OpenCartTestNG.TestNG_Registration:validRegistration</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m7">com.OpenCartTestNG.TestNG_Login:TC_Login_Invalid_001</h2>
+<h2 id="m5">com.DataProvider.DP_Registration:invalidRegistrationTest</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td></td>
+<td></td>
+</tr>
+</table>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>

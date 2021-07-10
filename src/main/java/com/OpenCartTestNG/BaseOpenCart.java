@@ -39,6 +39,6 @@ public class BaseOpenCart extends TestBase {
 
     @AfterSuite
     public static void completeSuite(){
-        //closeBrowser();
+        closeBrowser();
     }
 }

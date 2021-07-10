@@ -4,7 +4,10 @@
     <test name="Simple Test">
         <classes>
 
-            <class name="com.Frames.SingleFrame"> </class>
+
+            <class name="com.DataProvider.DP_Registration"> </class>
+           <!--<class name="com.DataProvider.DP_LoginTest"> </class>-->
+            <!--<class name="com.Frames.SingleFrame"> </class>-->
             <!--<class name="com.BrowserOption.HeadlessTest"> </class>-->
 
             <!--<class name="com.TestNGDemo.TestCase_001"> </class>
