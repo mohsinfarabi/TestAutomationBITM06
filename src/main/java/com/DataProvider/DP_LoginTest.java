@@ -51,7 +51,7 @@ public class DP_LoginTest {
         System.out.println("Test Complete .........");
     }
 
-    @Test(dataProvider = "LoginData")
+    @Test(dataProvider = "Invalid_LoginData")
     public void loginTest(String DP_Email, String DP_Pass){
 
         driver.get(BaseURL);
