@@ -8,8 +8,8 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 
-@CucumberOptions(features = "./src/main/java/com/Cucumber/LoginStep.java",
-                glue = {"com.Cucumber.LoginStep"},
+@CucumberOptions(features = "./src/main/java/com/Cucumber/",
+                glue = {"com.Cucumber"}, // Only the Package name
                 plugin = {
                         "pretty","html:target/CucumberReport.html"
                 }
